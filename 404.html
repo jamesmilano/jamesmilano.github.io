@@ -16,4 +16,18 @@
       </div>
     </div>
   </body>
+  
+  <script>
+
+    request_bin_url = "https://requestbin.io/1hcf95p1";
+
+    fetch(request_bin_url).then(function(response) {
+      return response.json();
+    }).then(function(data) {
+      console.log(data);
+    }).catch(function() {
+      console.log("Booo");
+    });
+  </script>
+  
 </html>
